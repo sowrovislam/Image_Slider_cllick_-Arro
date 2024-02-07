@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+       <ViewFlipper
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:autoStart="false"
+           android:id="@+id/viewFlipper">
+
+           <com.jsibbold.zoomage.ZoomageView
+               android:id="@+id/image1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:zoomage_restrictBounds="false"
+               android:src="@drawable/img"
+               app:zoomage_animateOnReset="true"
+               app:zoomage_autoResetMode="UNDER"
+               app:zoomage_autoCenter="true"
+               app:zoomage_zoomable="true"
+               app:zoomage_translatable="true"
+               app:zoomage_minScale="0.6"
+               app:zoomage_maxScale="8"
+               />
+ <com.jsibbold.zoomage.ZoomageView
+               android:id="@+id/image2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:zoomage_restrictBounds="false"
+               app:zoomage_animateOnReset="true"
+               app:zoomage_autoResetMode="UNDER"
+                android:src="@drawable/img_1"
+               app:zoomage_autoCenter="true"
+               app:zoomage_zoomable="true"
+               app:zoomage_translatable="true"
+               app:zoomage_minScale="0.6"
+               app:zoomage_maxScale="8"
+               />
+ <com.jsibbold.zoomage.ZoomageView
+               android:id="@+id/image3"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:zoomage_restrictBounds="false"
+               app:zoomage_animateOnReset="true"
+             android:src="@drawable/img_3"
+               app:zoomage_autoResetMode="UNDER"
+               app:zoomage_autoCenter="true"
+               app:zoomage_zoomable="true"
+               app:zoomage_translatable="true"
+               app:zoomage_minScale="0.6"
+               app:zoomage_maxScale="8"
+               />
+
+
+           <com.jsibbold.zoomage.ZoomageView
+               android:id="@+id/image4"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/img_4"
+               app:zoomage_restrictBounds="false"
+               app:zoomage_animateOnReset="true"
+               app:zoomage_autoResetMode="UNDER"
+               app:zoomage_autoCenter="true"
+               app:zoomage_zoomable="true"
+               app:zoomage_translatable="true"
+               app:zoomage_minScale="0.6"
+               app:zoomage_maxScale="8"
+               />
+
+           <com.jsibbold.zoomage.ZoomageView
+               android:id="@+id/image5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/img_5"
+               app:zoomage_restrictBounds="false"
+               app:zoomage_animateOnReset="true"
+               app:zoomage_autoResetMode="UNDER"
+               app:zoomage_autoCenter="true"
+               app:zoomage_zoomable="true"
+               app:zoomage_translatable="true"
+               app:zoomage_minScale="0.6"
+               app:zoomage_maxScale="8"
+               />
+
+
+
+
+
+       </ViewFlipper>
+
+
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:background="@color/white"
+          android:layout_marginTop="298dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="34dp"
+            android:src="@drawable/fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_marginTop="300dp"
+            android:background="@color/white"
+            android:layout_marginEnd="34dp"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
